@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #414141;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    <img src="https://images.unsplash.com/photo-1721894456328-c8c370fbaa80?q=80&w=2022&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="400px" alt="no image">
+
+    <img src="./sample.png" width="400px" alt="no image">
+
+    <picture>
+        <source media="(min-width: 850)" srcset="./sample.png" />
+        <source media="(min-width: 650)" srcset="./sample2.jpeg" />
+        <img src="./sample.png" alt="">
+    </picture>
+    -->
+
+    <!-- an image map generator -->
+
+    <img src="human-body.jpg" usemap="#image-map">
+
+<map name="image-map">
+    <area onclick="mouth()" target="" alt="" title="" href="" coords="886,670,1002,724" shape="rect">
+    <area onclick="eye()" target="" alt="" title="" href="" coords="990,567,1085,622" shape="rect">
+    <area onclick="hair()" target="" alt="" title="" href="" coords="715,321,1180,538" shape="rect">
+</map>
+
+<script>
+    function mouth () {
+        alert("You clicked on Mouth")
+    }
+    function eye () {
+        alert("You clicked on Eye")
+    }
+    function hair () {
+        alert("You clicked on Hair")
+    }
+</script>
+</body>
+</html>
+
+<!-- 
+to download free sample images go to unsplash, pexels, 
+-->
+
+<!-- NOTE => it is always reccommended to keep your image name in a single word. spaces in the names gets you in trouble when dealing with servers -->
+
+<!-- to generate image map go to "image map generator" on google then select the areas of an image and then copy paste the code here-->
